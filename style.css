@@ -80,16 +80,16 @@ body{
 }
 
 /*--------------------Cards------------*/
-.cards{
+/* .cards{
     display:grid;
     grid-template-columns:repeat(4,1fr);
     gap:20px;
     margin-bottom: 30px;
-}
+} */
 
 /*------------single Card----------------*/
 
-.card{
+/* .card{
     padding: 25px;
     border-radius: 20px;
     display:flex;
@@ -131,4 +131,261 @@ body{
 
 .purple{
     color:#8b5cf6;
+} */
+
+
+/* Cards Layout */
+.cards{
+
+  display:grid;
+
+  grid-template-columns:repeat(4,1fr);
+
+  gap:20px;
+
+  margin-bottom:30px;
+}
+
+/* Single Card */
+.card{
+
+  background:
+  linear-gradient(
+    145deg,
+    rgba(10,18,40,0.95),
+    rgba(2,6,23,0.95)
+  );
+
+  border:1px solid rgba(255,255,255,0.06);
+
+  border-radius:24px;
+
+  padding:24px;
+
+  display:flex;
+
+  justify-content:space-between;
+
+  align-items:flex-start;
+
+  position:relative;
+
+  overflow:hidden;
+
+  transition:0.3s;
+}
+
+/* Hover */
+.card:hover{
+
+  transform:translateY(-5px);
+
+  border-color:#7C3AED;
+}
+
+/* Left Side */
+.card-left{
+
+  display:flex;
+  gap:18px;
+}
+
+/* Icon Box */
+.icon-box{
+
+  width:72px;
+  height:72px;
+
+  border-radius:22px;
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:center;
+
+  font-size:28px;
+
+  color:white;
+
+  flex-shrink:0;
+}
+
+/* Icon Backgrounds */
+.blue-bg{
+
+  background:
+  linear-gradient(
+    145deg,
+    #1D4ED8,
+    #4338CA
+  );
+
+  box-shadow:
+  0 0 25px rgba(59,130,246,0.4);
+}
+
+.green-bg{
+
+  background:
+  linear-gradient(
+    145deg,
+    #16A34A,
+    #10B981
+  );
+
+  box-shadow:
+  0 0 25px rgba(34,197,94,0.35);
+}
+
+.red-bg{
+
+  background:
+  linear-gradient(
+    145deg,
+    #DC2626,
+    #E11D48
+  );
+
+  box-shadow:
+  0 0 25px rgba(239,68,68,0.35);
+}
+
+.purple-bg{
+
+  background:
+  linear-gradient(
+    145deg,
+    #6D28D9,
+    #7C3AED
+  );
+
+  box-shadow:
+  0 0 25px rgba(139,92,246,0.4);
+}
+
+/* Card Text */
+.card-text p{
+
+  color:#CBD5E1;
+
+  font-size:15px;
+
+  margin-bottom:12px;
+}
+
+/* Big Number */
+.card-text h2{
+
+  font-size:32px;
+  color: #FFF;
+
+  font-weight:700;
+
+  margin-bottom:18px;
+}
+
+/* Percentage */
+.green-text{
+
+  color:#22C55E;
+
+  font-size:10px;
+
+  font-weight:600;
+}
+
+.red-text{
+
+  color:#EF4444;
+
+  font-size:10px;   
+
+  font-weight:600;
+}
+
+/* Small Text */
+.card-text small{
+
+  color:#94A3B8;
+
+  font-weight:400;
+
+  margin-left:4px;
+  font-size: 10px;
+}
+
+/* Wave */
+.wave{
+
+  display: flex;  
+  align-items: center;
+  justify-content: center;
+
+  width:40px;
+
+  height:20px;
+
+  border-radius:2px;
+
+  position:absolute;
+
+  bottom:20px;  
+
+  right:20px;
+
+  opacity:0.9;
+}
+
+/* Green */
+.green-wave{
+
+  background:
+  linear-gradient(
+    to right,
+    transparent,
+    #22C55E
+  );
+}
+
+/* Red */
+.red-wave{
+
+  background:
+  linear-gradient(
+    to right,
+    transparent,
+    #EF4444
+  );
+}
+
+/* Purple */
+.purple-wave{
+
+  background:
+  linear-gradient(
+    to right,
+    transparent,
+    #8B5CF6
+  );
+}
+
+/* right icon */
+
+/* .fa-arrow-trend-up{
+    background-color: #22C55E;
+    
+    } */
+
+
+.fa-arrow-trend-up{
+    color:#10B981;
+}
+
+.fa-arrow-trend-down{
+    color: red;
+}
+
+.purple{
+    color: purple;
 }
